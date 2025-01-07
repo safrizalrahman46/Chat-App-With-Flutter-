@@ -1,1 +1,0 @@
-1. koneksi database ke firebase database

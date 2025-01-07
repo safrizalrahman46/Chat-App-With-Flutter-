@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "972989510149",
+    "project_id": "fir-chatapp-f960f",
+    "storage_bucket": "fir-chatapp-f960f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:972989510149:android:235cebe30bd0df5cce626c",
+        "android_client_info": {
+          "package_name": "com.example.chatapp_firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoFipgZg78xxVmbe79J9qUAHDqNI2Y7_A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
