@@ -17,7 +17,7 @@ class SignupScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            30.verticalSpace,
+            40.verticalSpace,
             Text("Create Your Account", style: h),
             5.verticalSpace,
             Text(
