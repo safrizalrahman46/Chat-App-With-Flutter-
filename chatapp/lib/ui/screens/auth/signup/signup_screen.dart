@@ -1,3 +1,4 @@
+import 'package:chatapp/core/constants/colors.dart';
 import 'package:chatapp/core/constants/styles.dart';
 import 'package:chatapp/ui/widgets/textfield_widget.dart';
 import 'package:flutter/material.dart';
@@ -25,9 +26,29 @@ class SignupScreen extends StatelessWidget {
             ),
             20.verticalSpace,
             CustomTextfield(
-              hintText: "Enter Name",
+              hintText: "Enter Email",
               onChanged: (p0) {},
             ),
+            20.verticalSpace,
+            CustomTextfield(
+              hintText: "Enter Password",
+              onChanged: (p0) {},
+            ),
+            20.verticalSpace,
+            CustomTextfield(
+              hintText: "Confirm Password",
+              onChanged: (p0) {},
+            ),
+            30.verticalSpace,
+            SizedBox(
+                width: 1.sw,
+                child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(backgroundColor: button),
+                    onPressed: () {},
+                    child: Text(
+                      "Sign Up",
+                      style: body.copyWith(color: white),
+                    )))
           ],
         ),
       ),
