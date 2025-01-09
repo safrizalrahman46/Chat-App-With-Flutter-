@@ -1,5 +1,7 @@
 import 'package:chatapp/core/constants/colors.dart';
+import 'package:chatapp/core/constants/string.dart';
 import 'package:chatapp/core/constants/styles.dart';
+import 'package:chatapp/ui/widgets/button_widget.dart';
 import 'package:chatapp/ui/widgets/textfield_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -18,8 +20,11 @@ class SignupScreen extends StatelessWidget {
             30.verticalSpace,
             Text("Create Your Account", style: h),
             5.verticalSpace,
-            const Text("Please Provide The Details"),
-            24.verticalSpace,
+            Text(
+              "Please Provide The Details",
+              style: body.copyWith(color: grey),
+            ),
+            30.verticalSpace,
             CustomTextfield(
               hintText: "Enter Name",
               onChanged: (p0) {},
@@ -40,15 +45,26 @@ class SignupScreen extends StatelessWidget {
               onChanged: (p0) {},
             ),
             30.verticalSpace,
-            SizedBox(
-                width: 1.sw,
-                child: ElevatedButton(
-                    style: ElevatedButton.styleFrom(backgroundColor: button),
-                    onPressed: () {},
-                    child: Text(
-                      "Sign Up",
-                      style: body.copyWith(color: white),
-                    )))
+            CustomButton(
+              onPressed: () {},
+              text: "Sign Up",
+            ),
+            20.verticalSpace,
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  "Already have account ?",
+                  style: body.copyWith(color: grey),
+                ),
+                InkWell(
+                    onTap: () {
+                      Navigator.pushNamed(context, login);
+                    },
+                    child: Text("Login",
+                        style: body.copyWith(fontWeight: FontWeight.bold)))
+              ],
+            )
           ],
         ),
       ),
